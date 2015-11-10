@@ -222,7 +222,7 @@ function updateCurr(e){
 
 				success: function(data){
 					console.log(data);
-					var mytext = "<img src=" + data + "/>"
+					var mytext = '<img src="' + data + '"/>'
 					tinyMCE.activeEditor.execCommand('mceInsertContent', 0, mytext);
 				}
 			});
